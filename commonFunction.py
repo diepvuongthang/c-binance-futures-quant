@@ -57,9 +57,9 @@ class FunctionClient(object):
         self.privateIP = self.get_private_ip()
 
         self.updateMachineStatusTs = 0
-
-        oss_auth = oss2.Auth(ALIYUN_API_KEY, ALIYUN_API_SECRET)
-        self.oss_bucket = oss2.Bucket(oss_auth, 'http://oss-cn-hongkong.aliyuncs.com', 'zuibite-api')
+        # replay aws
+        # oss_auth = oss2.Auth(ALIYUN_API_KEY, ALIYUN_API_SECRET)
+        # self.oss_bucket = oss2.Bucket(oss_auth, 'http://oss-cn-hongkong.aliyuncs.com', 'zuibite-api')
 
         self.serverName = self.getServerName()
     def send_lark_msg(self,content):
@@ -438,16 +438,16 @@ class FunctionClient(object):
     def oss_put_obj(self,obj,name):
         try:
             inputData= json.dumps(obj,ensure_ascii=False)
-            ossResult = self.oss_bucket.put_object(name, inputData)
+            # ossResult = self.oss_bucket.put_object(name, inputData)
         except Exception as e:
             print(e)
 
     def oss_get_obj(self,name):
         try:
-            object_stream = self.oss_bucket.get_object(name)
-            readObj = object_stream.read()
-            readObj = json.loads(str(readObj,'utf-8'))
-            return readObj
+            # object_stream = self.oss_bucket.get_object(name)
+            # readObj = object_stream.read()
+            # readObj = json.loads(str(readObj,'utf-8'))
+            return ''
         except Exception as e:
             print(e)
 
