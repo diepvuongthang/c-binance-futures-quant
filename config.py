@@ -1,9 +1,9 @@
 MYSQL_CONFIG = {
-    'host':'',
+    'host':'localhost',
     'port':3306,
-    'user':'',
-    'password':'',
-    'database':'',
+    'user':'root',
+    'password':'Abc@123456',
+    'database':'c_binance_futures_quant',
     'charset':'utf8mb4'
 }
 

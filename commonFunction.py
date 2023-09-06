@@ -102,7 +102,7 @@ class FunctionClient(object):
         now = int(time.time())
         if now - self.lastSendLarkTs>60:
             self.lastSendLarkTs = now
-            self.send_lark_msg(content)
+            # self.send_lark_msg(content)
 
     def turn_ts_to_time(self,initValue):
         if str(type(initValue))=="<class 'str'>":
@@ -163,7 +163,7 @@ class FunctionClient(object):
                 normal = True
                 cursor.close()
             except Exception as e:
-                self.send_lark_msg("mysql ex,"+str(e)+","+sql+","+str(params))
+                # self.send_lark_msg("mysql ex,"+str(e)+","+sql+","+str(params))
                 print("mysql error")
                 print(sql)
                 print(e)
@@ -188,7 +188,7 @@ class FunctionClient(object):
                 normal = True
                 cursor.close()
             except Exception as e:
-                self.send_lark_msg("mysql ex,"+str(e)+","+sql+","+str(params))
+                # self.send_lark_msg("mysql ex,"+str(e)+","+sql+","+str(params))
                 print("mysql error")
                 print(sql)
                 try: 
@@ -277,6 +277,7 @@ class FunctionClient(object):
                 return result
             except Exception as e:
                 self.send_lark_msg_limit_one_min(str(e))
+                print(e)
 
         return result
 
