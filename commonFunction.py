@@ -452,7 +452,7 @@ class FunctionClient(object):
             print(e)
 
     def getServerName(self):
-        serverName = ""
+        serverName = "xxxxxx"
         privateIP = ""
         try: 
             s = socket.socket(socket.AF_INET,socket.SOCK_DGRAM) 
