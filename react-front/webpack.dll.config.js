@@ -20,9 +20,9 @@ module.exports = {
     filename: 'Dll.js',
     library: '[name]_[hash]',
       // JS 执行入口文件
-      entry: {
-          main: './main.js',
-      },
+      // entry: {
+      //     main: './main.js',
+      // },
       // 为从 entry 中配置生成的 Chunk 配置输出文件的名称
       filename: '[name].' + Version + 'js',
       // 为动态加载的 Chunk 配置输出文件的名称
