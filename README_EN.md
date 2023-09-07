@@ -430,3 +430,9 @@ Why is not significant, because I use the lowest configuration mysql whole syste
 Most of my energy is focused on data entry, transaction performance optimisation, while ignoring the post-transaction data pulling and analysis of the optimisation of this piece, this piece as long as the final result is right.
 
 The post-trade process, whether it consumes 1 performance or 100, as long as it doesn't reach the peak of my hardware, I'm not looking to change it!
+
+<!-- https://www.digitalocean.com/community/tutorials/how-to-install-mysql-on-ubuntu-20-04#step-3-creating-a-dedicated-mysql-user-and-granting-privileges
+
+https://blog.udemy.com/how-to-create-a-new-database/?utm_source=adwords&utm_medium=udemyads&utm_campaign=DSA_Catchall_la.EN_cc.ROW&utm_content=deal4584&utm_term=_._ag_88010211481_._ad_535397282061_._kw__._de_c_._dm__._pl__._ti_dsa-393987629421_._li_9040375_._pd__._&matchtype=&gclid=CjwKCAjwo9unBhBTEiwAipC1112wDwL-1H4FPbQqhcMOdh72BsbdMVCHBk7QCfgrXkh-EH-TAYBOchoCr7YQAvD_BwE -->
+
+<!-- node v14.21.3 -->
